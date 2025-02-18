@@ -233,7 +233,7 @@ ggplot(needles_subset, aes(x = collectDate, y = dryMass, color = nlcdClass)) +
 #7
 ggplot(needles_subset, aes(x = collectDate, y = dryMass)) +
   geom_point(alpha = 0.6, size = 2, color = "darkred") +  # Uniform color for clarity
-  scale_x_date(date_breaks = "6 months", date_labels = "%Y") +  # Improve date formatting
+  scale_x_date(date_breaks = "6 months", date_labels = "%b%y") +  # Improve date formatting
   labs(title = "Needle Litter Dry Mass Over Time by NLCD Class",
        x = "Collection Date[6 months]",
        y = "Dry Mass (g)") +
